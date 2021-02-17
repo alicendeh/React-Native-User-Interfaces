@@ -42,7 +42,7 @@ const Term = () => {
       <FlatList
         horizontal
         showsHorizontalScrollIndicator={false}
-        keyExtractor={(item) => item.tIName}
+        keyExtractor={(item) => item.IName}
         data={DataSet}
         renderItem={({item}) => {
           return (

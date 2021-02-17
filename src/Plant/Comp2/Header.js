@@ -6,7 +6,7 @@ import {View, Text, StyleSheet, Image} from 'react-native';
 const MyComponent = () => {
   return (
     <View style={styles.container}>
-      <Text style={{fontSize: 30, color: 'black'}}>Hello Tony!</Text>
+      <Text style={{fontSize: 30, color: 'black'}}>Hello Bezos!</Text>
       <Image source={{uri: 'https://cutt.ly/GjGdx1d'}} style={styles.img} />
     </View>
   );
