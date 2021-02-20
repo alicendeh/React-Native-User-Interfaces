@@ -16,11 +16,9 @@ const Comp1 = () => {
   //   console.log(`width = ${width} and height = ${height}`);
   return (
     <View style={styles.container}>
-      
       <ImageBackground
         source={require('./Asset/1.jpg')}
         style={styles.img}
-      
         resizeMode="stretch">
         <View style={styles.disp1}>
           <Icon name="arrow-left" color="white" size={20} />
@@ -50,6 +48,7 @@ const styles = StyleSheet.create({
   },
   img: {
     width: '100%',
+
     height: Dimensions.get('window').height > 450 ? '100%' : '100%',
   },
   disp1: {

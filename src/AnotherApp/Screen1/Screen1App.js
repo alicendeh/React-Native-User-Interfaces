@@ -1,6 +1,6 @@
 //import liraries
 import React, {Component} from 'react';
-import {View, Text, StyleSheet, ScrollView} from 'react-native';
+import {View, Text, StyleSheet, ScrollView, StatusBar} from 'react-native';
 import LinearGradient from 'react-native-linear-gradient';
 import Header from './Header';
 import MainNavig from './TopTabNavig/MainNavig';
@@ -13,11 +13,12 @@ const Screen1App = () => {
       colors={['#667eac', '#d5738c', '#484c6a']}
       locations={[0.3, 0.7, 0.9]}
       style={styles.container}>
+      <StatusBar backgroundColor="#667eac" />
       <Header />
       <ScrollView>
         <MainNavig />
       </ScrollView>
-      <Footer />
+      {/* <Footer /> */}
     </LinearGradient>
   );
 };

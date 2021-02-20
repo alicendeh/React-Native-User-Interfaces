@@ -10,41 +10,21 @@ import Video from './NavigElem/Video';
 
 const Tab = createMaterialTopTabNavigator();
 
+const Header = () => {
+  return (
+    <View style={{flexDirection: 'row'}}>
+      <Text>Music</Text>
+      <Text>Film</Text>
+      <Text>Video</Text>
+    </View>
+  );
+};
+
 const MainNavig = () => {
   return (
     <View>
-      <Tab.Navigator
-        swipeEnabled={false}
-        tabBarOptions={{
-          activeTintColor: '#fff',
-          inactiveTintColor: 'white',
-          indicatorStyle: {
-            backgroundColor: 'pink',
-          },
-          style: {
-            backgroundColor: '#667eac',
-            paddingBottom: 3,
-            borderColor: '#667eac',
-            borderBottomWidth: 0.3,
-            borderBottomColor: 'white',
-          },
-        }}>
-        <Tab.Screen
-          name="Home"
-          component={Film}
-          options={{title: 'Film Score', backgroundColor: 'red'}}
-        />
-        <Tab.Screen
-          name="Music"
-          component={Music}
-          options={{title: 'Music Theatre'}}
-        />
-        <Tab.Screen
-          name="Video"
-          component={Video}
-          options={{title: 'Video Quality'}}
-        />
-      </Tab.Navigator>
+      <Header />
+      <Film />
     </View>
   );
 };
